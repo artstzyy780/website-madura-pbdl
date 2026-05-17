@@ -81,3 +81,7 @@ Route::middleware('auth')->group(function () {
     }); // end role:admin
 
 });
+
+Route::get('/', function () {
+    return redirect()->route('login');
+});
